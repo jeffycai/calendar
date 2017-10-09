@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>full-calendar.js - example - rc-calendar@9.1.8</title>
+  <title>full-calendar.js - example - ziaochina-rc-calendar@0.1.3</title>
   <meta name="viewport"
         content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
   <meta charset="utf-8"/>
@@ -257,13 +257,13 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
     document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"'+'>'+'<'+'/'+'script>');
   }
   </script>
-  <link rel="stylesheet" href="../common.css" /><link rel="stylesheet" href="full-calendar.css" />
+  <link rel="stylesheet" href="full-calendar.css" />
 </head>
 
 <body>
   <div class="container">
     <div class="header">
-      <h1>rc-calendar@9.1.8</h1>
+      <h1>ziaochina-rc-calendar@0.1.3</h1>
 
       <p>React Calendar</p>
     </div>
@@ -271,16 +271,16 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 
     <div class="highlight"><pre><code language="js"><span class="hljs-comment">/* eslint react/no-multi-comp:0, no-console:0 */</span>
 
-<span class="hljs-keyword">import</span> <span class="hljs-string">'rc-calendar/assets/index.css'</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">'rc-calendar/assets/index.less'</span>;
 <span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
 <span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">'react-dom'</span>;
-<span class="hljs-keyword">import</span> FullCalendar <span class="hljs-keyword">from</span> <span class="hljs-string">'rc-calendar/lib/FullCalendar'</span>;
+<span class="hljs-keyword">import</span> FullCalendar <span class="hljs-keyword">from</span> <span class="hljs-string">'rc-calendar/src/FullCalendar'</span>;
 
 <span class="hljs-keyword">import</span> <span class="hljs-string">'rc-select/assets/index.css'</span>;
 <span class="hljs-keyword">import</span> Select <span class="hljs-keyword">from</span> <span class="hljs-string">'rc-select'</span>;
 
-<span class="hljs-keyword">import</span> zhCN <span class="hljs-keyword">from</span> <span class="hljs-string">'rc-calendar/lib/locale/zh_CN'</span>;
-<span class="hljs-keyword">import</span> enUS <span class="hljs-keyword">from</span> <span class="hljs-string">'rc-calendar/lib/locale/en_US'</span>;
+<span class="hljs-keyword">import</span> zhCN <span class="hljs-keyword">from</span> <span class="hljs-string">'rc-calendar/src/locale/zh_CN'</span>;
+<span class="hljs-keyword">import</span> enUS <span class="hljs-keyword">from</span> <span class="hljs-string">'rc-calendar/src/locale/en_US'</span>;
 
 <span class="hljs-keyword">import</span> moment <span class="hljs-keyword">from</span> <span class="hljs-string">'moment'</span>;
 <span class="hljs-keyword">import</span> <span class="hljs-string">'moment/locale/zh-cn'</span>;
@@ -317,7 +317,7 @@ defaultCalendarValue.add(-<span class="hljs-number">1</span>, <span class="hljs-
   render() {
     <span class="hljs-keyword">return</span> (
       <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">{{</span> <span class="hljs-attribute">zIndex:</span> <span class="hljs-attribute">1000</span>, <span class="hljs-attribute">position:</span> '<span class="hljs-attribute">relative</span>' }}&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">FullCalendar</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">FullCalendar</span>
           <span class="hljs-attribute">style</span>=<span class="hljs-value">{{</span> <span class="hljs-attribute">margin:</span> <span class="hljs-attribute">10</span> }}
           <span class="hljs-attribute">Select</span>=<span class="hljs-value">{Select}</span>
           <span class="hljs-attribute">fullscreen</span>=<span class="hljs-value">{false}</span>
@@ -325,7 +325,7 @@ defaultCalendarValue.add(-<span class="hljs-number">1</span>, <span class="hljs-
           <span class="hljs-attribute">defaultValue</span>=<span class="hljs-value">{now}</span>
           <span class="hljs-attribute">locale</span>=<span class="hljs-value">{cn</span> ? <span class="hljs-attribute">zhCN</span> <span class="hljs-attribute">:</span> <span class="hljs-attribute">enUS</span>}
         /&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">FullCalendar</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">FullCalendar</span>
           <span class="hljs-attribute">style</span>=<span class="hljs-value">{{</span> <span class="hljs-attribute">margin:</span> <span class="hljs-attribute">10</span> }}
           <span class="hljs-attribute">Select</span>=<span class="hljs-value">{Select}</span>
           <span class="hljs-attribute">fullscreen</span>
