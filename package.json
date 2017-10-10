@@ -1,6 +1,6 @@
 {
   "name": "ziaochina-rc-calendar",
-  "version": "0.1.3",
+  "version": "0.0.1",
   "description": "React Calendar",
   "keywords": [
     "react",
@@ -20,7 +20,7 @@
   "main": "lib/index",
   "module": "es/index",
   "homepage": "http://github.com/react-component/calendar",
-  "author": "yiminghe@gmail.com",
+  "author": "285772732@qq.com",
   "repository": {
     "type": "git",
     "url": "git@github.com:react-component/calendar.git"
