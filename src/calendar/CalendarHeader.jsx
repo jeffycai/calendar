@@ -33,12 +33,18 @@ const CalendarHeader = createReactClass({
     enablePrev: PropTypes.any,
     enableNext: PropTypes.any,
     disabledMonth: PropTypes.func,
+    showMonthDropdown: PropTypes.bool,
+    showYearDropdown: PropTypes.bool,
+    dropdownMode: PropTypes.string,
   },
 
   getDefaultProps() {
     return {
       enableNext: 1,
       enablePrev: 1,
+      showYearDropdown: false,
+      showMonthDropdown: false,
+      dropdownMode: '',
       onPanelChange() {},
       onValueChange() {},
     };
@@ -142,6 +148,9 @@ const CalendarHeader = createReactClass({
       enableNext,
       enablePrev,
       disabledMonth,
+      showYearDropdown,
+      showMonthDropdown,
+      dropdownMode,
     } = props;
 
     let panel = null;
@@ -156,6 +165,9 @@ const CalendarHeader = createReactClass({
           disabledDate={disabledMonth}
           cellRender={props.monthCellRender}
           contentRender={props.monthCellContentRender}
+          showYearDropdown={showYearDropdown}
+          showMonthDropdown={showMonthDropdown}
+          dropdownMode={dropdownMode}
         />
       );
     }
