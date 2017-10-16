@@ -384,7 +384,9 @@ const Test = React.createClass({
       disabledTime={state.showTime ? disabledTime : null}
       timePicker={state.showTime ? timePickerElement : null}
       defaultValue={this.props.defaultCalendarValue}
-      showDateInput={state.showDateInput}
+      showDateInput={false}
+      showMonthDropdown={true}
+      showYearDropdown={true}
       disabledDate={disabledDate}
     /&gt;);
     return (&lt;div style={{ width: 400, margin: 20 }}&gt;

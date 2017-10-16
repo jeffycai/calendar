@@ -175,7 +175,9 @@ var Test = __WEBPACK_IMPORTED_MODULE_1_react___default.a.createClass({
       disabledTime: state.showTime ? disabledTime : null,
       timePicker: state.showTime ? timePickerElement : null,
       defaultValue: this.props.defaultCalendarValue,
-      showDateInput: state.showDateInput,
+      showDateInput: false,
+      showMonthDropdown: true,
+      showYearDropdown: true,
       disabledDate: disabledDate
     });
     return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
