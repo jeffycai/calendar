@@ -1,20 +1,9 @@
 /* eslint react/no-multi-comp:0, no-console:0, no-unused-vars:0 */
-<<<<<<< master
-import 'rc-calendar/assets/index.less';
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Calendar from 'rc-calendar/src';
-import RangeCalendar from 'rc-calendar/src/RangeCalendar';
-=======
-<<<<<<< remotes/origin/gh-pages
-=======
 import 'ziaochina-rc-calendar/assets/index.less';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Calendar from 'ziaochina-rc-calendar/src';
 import RangeCalendar from 'ziaochina-rc-calendar/src/RangeCalendar';
->>>>>>> local
->>>>>>> local
 
 import Select, { Option } from 'rc-select';
 import 'rc-select/assets/index.css';

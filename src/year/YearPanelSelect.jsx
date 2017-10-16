@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-const ROW = 4;
-const COL = 3;
+const ROW = 12;
+const COL = 1;
 
 function goYear(direction) {
   const value = this.state.value.clone();
@@ -19,10 +19,10 @@ function chooseYear(year) {
   this.props.onSelect(value);
 }
 
-export default class YearPanel extends React.Component {
+export default class YearPanelSelect extends React.Component {
   constructor(props) {
     super(props);
-    this.prefixCls = `${props.rootPrefixCls}-year-panel`;
+    this.prefixCls = `${props.rootPrefixCls}-year-panel-select`;
     this.state = {
       value: props.value || props.defaultValue,
     };
@@ -89,7 +89,7 @@ export default class YearPanel extends React.Component {
             <a
               className={`${prefixCls}-year`}
             >
-              {yearData.content}
+              {yearData.content}年
             </a>
           </td>);
       });
@@ -98,52 +98,24 @@ export default class YearPanel extends React.Component {
 
     return (
       <div className={this.prefixCls}>
-        <div>
-          <div className={`${prefixCls}-header`}>
-            <a
-              className={`${prefixCls}-prev-decade-btn`}
-              role="button"
-              onClick={this.previousDecade}
-              title={locale.previousDecade}
-            />
-            <a
-              className={`${prefixCls}-decade-select`}
-              role="button"
-              onClick={props.onDecadePanelShow}
-              title={locale.decadeSelect}
-            >
-              <span className={`${prefixCls}-decade-select-content`}>
-                {startYear}-{endYear}
-              </span>
-              <span className={`${prefixCls}-decade-select-arrow`}>x</span>
-            </a>
-
-            <a
-              className={`${prefixCls}-next-decade-btn`}
-              role="button"
-              onClick={this.nextDecade}
-              title={locale.nextDecade}
-            />
-          </div>
-          <div className={`${prefixCls}-body`}>
-            <table className={`${prefixCls}-table`} cellSpacing="0" role="grid">
-              <tbody className={`${prefixCls}-tbody`}>
+        <div className={`${prefixCls}-body`}>
+          <table className={`${prefixCls}-table`} cellSpacing="0" role="grid">
+            <tbody className={`${prefixCls}-tbody`}>
               {yeasEls}
-              </tbody>
-            </table>
-          </div>
+            </tbody>
+          </table>
         </div>
       </div>);
   }
 }
 
-YearPanel.propTypes = {
+YearPanelSelect.propTypes = {
   rootPrefixCls: PropTypes.string,
   value: PropTypes.object,
   defaultValue: PropTypes.object,
 };
 
-YearPanel.defaultProps = {
+YearPanelSelect.defaultProps = {
   onSelect() {
   },
 };

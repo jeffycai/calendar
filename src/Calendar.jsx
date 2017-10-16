@@ -10,11 +10,8 @@ import CalendarMixin from './mixin/CalendarMixin';
 import CommonMixin from './mixin/CommonMixin';
 import DateInput from './date/DateInput';
 import { getTimeConfig, getTodayTime, syncTime } from './util';
-<<<<<<< master
 
-=======
 import PopperComponent, { popperPlacementPositions } from './popper'
->>>>>>> local
 function noop() {
 }
 
@@ -78,12 +75,9 @@ const Calendar = createReactClass({
     disabledTime: PropTypes.any,
     renderFooter: PropTypes.func,
     renderSidebar: PropTypes.func,
-<<<<<<< master
-=======
     popperClassName: PropTypes.string,
     popperModifiers: PropTypes.object,
     popperPlacement: PropTypes.oneOf(popperPlacementPositions),
->>>>>>> local
     showMonthDropdown: PropTypes.bool,
     showYearDropdown: PropTypes.bool,
     dropdownMode: PropTypes.string,
@@ -94,11 +88,7 @@ const Calendar = createReactClass({
   getDefaultProps() {
     return {
       showToday: true,
-<<<<<<< master
       showDateInput: true,
-=======
-      showDateInput: false,
->>>>>>> local
       timePicker: null,
       onOk: noop,
       onPanelChange: noop,
@@ -278,15 +268,10 @@ const Calendar = createReactClass({
     const children = [
       props.renderSidebar(),
       (<div className={`${prefixCls}-panel`} key="panel">
-<<<<<<< master
-        {dateInputElement}
-        <div className={`${prefixCls}-date-panel`}>
-=======
         <div className={`${prefixCls}-panel-arrow`}></div>
         {dateInputElement}        
         <div className={`${prefixCls}-date-panel`}>
           
->>>>>>> local
           <CalendarHeader
             locale={locale}
             mode={mode}
@@ -303,11 +288,7 @@ const Calendar = createReactClass({
           {timePicker && showTimePicker ?
             (<div className={`${prefixCls}-time-picker`}>
               <div className={`${prefixCls}-time-picker-panel`}>
-<<<<<<< master
-                {timePickerEle }
-=======
                 {timePickerEle}
->>>>>>> local
               </div>
             </div>)
             : null}
@@ -347,8 +328,6 @@ const Calendar = createReactClass({
         </div>
       </div>),
     ];
-<<<<<<< master
-=======
     /*
     return this.renderRoot(
       <div>
@@ -365,7 +344,6 @@ const Calendar = createReactClass({
       </div>
     );
     */
->>>>>>> local
 
     return this.renderRoot({
       children,

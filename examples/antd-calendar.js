@@ -1,18 +1,5 @@
 /* eslint react/no-multi-comp:0, no-console:0 */
 
-<<<<<<< master
-import 'rc-calendar/assets/index.less';
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Calendar from 'rc-calendar';
-import DatePicker from 'rc-calendar/src/Picker';
-import zhCN from 'rc-calendar/src/locale/zh_CN';
-import enUS from 'rc-calendar/src/locale/en_US';
-import 'rc-time-picker/assets/index.css';
-import TimePickerPanel from 'rc-time-picker/lib/Panel';
-=======
-<<<<<<< remotes/origin/gh-pages
-=======
 import 'ziaochina-rc-calendar/assets/index.less';
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -22,8 +9,6 @@ import zhCN from 'ziaochina-rc-calendar/src/locale/zh_CN';
 import enUS from 'ziaochina-rc-calendar/src/locale/en_US';
 import 'rc-time-picker/assets/index.css';
 import TimePickerPanel from 'rc-time-picker/lib/Panel';
->>>>>>> local
->>>>>>> local
 
 import moment from 'moment';
 import 'moment/locale/zh-cn';
@@ -86,7 +71,7 @@ const Test = React.createClass({
 
   getInitialState() {
     return {
-      showTime: false,
+      showTime: true,
       showDateInput: false,
       disabled: false,
       value: this.props.defaultValue,
@@ -117,119 +102,21 @@ const Test = React.createClass({
       disabled: !this.state.disabled,
     });
   },
-<<<<<<< master
 
-=======
-<<<<<<< remotes/origin/gh-pages
-  render: function render() {
-    var state = this.state;
-    var calendar = __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_rc_calendar___default.a, {
-      locale: cn ? __WEBPACK_IMPORTED_MODULE_5_rc_calendar_src_locale_zh_CN___default.a : __WEBPACK_IMPORTED_MODULE_6_rc_calendar_src_locale_en_US___default.a,
-      style: { zIndex: 1000 },
-      dateInputPlaceholder: 'please input',
-      formatter: getFormat(state.showTime),
-      disabledTime: state.showTime ? disabledTime : null,
-      timePicker: state.showTime ? timePickerElement : null,
-      defaultValue: this.props.defaultCalendarValue,
-      showDateInput: state.showDateInput,
-      disabledDate: disabledDate
-    });
-    return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-      'div',
-      { style: { width: 400, margin: 20 } },
-      __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-        'div',
-        { style: { marginBottom: 10 } },
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-          'label',
-          null,
-          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('input', {
-            type: 'checkbox',
-            checked: state.showTime,
-            onChange: this.onShowTimeChange
-          }),
-          'showTime'
-        ),
-        '\xA0\xA0\xA0\xA0',
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-          'label',
-          null,
-          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('input', {
-            type: 'checkbox',
-            checked: state.showDateInput,
-            onChange: this.onShowDateInputChange
-          }),
-          'showDateInput'
-        ),
-        '\xA0\xA0\xA0\xA0',
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-          'label',
-          null,
-          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('input', {
-            checked: state.disabled,
-            onChange: this.toggleDisabled,
-            type: 'checkbox'
-          }),
-          'disabled'
-        )
-      ),
-      __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-        'div',
-        { style: {
-            boxSizing: 'border-box',
-            position: 'relative',
-            display: 'block',
-            lineHeight: 1.5,
-            marginBottom: 22
-          }
-        },
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-          __WEBPACK_IMPORTED_MODULE_4_rc_calendar_src_Picker___default.a,
-          {
-            animation: 'slide-up',
-            disabled: state.disabled,
-            calendar: calendar,
-            value: state.value,
-            onChange: this.onChange
-          },
-          function (_ref) {
-            var value = _ref.value;
-
-            return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-              'span',
-              { tabIndex: '0' },
-              __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('input', {
-                placeholder: 'please select',
-                style: { width: 250 },
-                disabled: state.disabled,
-                readOnly: true,
-                tabIndex: '-1',
-                className: 'ant-calendar-picker-input ant-input',
-                value: value && value.format(getFormat(state.showTime)) || ''
-              })
-            );
-=======
-
->>>>>>> local
   render() {
     const state = this.state;
     const calendar = (<Calendar
       locale={cn ? zhCN : enUS}
       style={{ zIndex: 1000 }}
-<<<<<<< master
       dateInputPlaceholder="please input"
       formatter={getFormat(state.showTime)}
       disabledTime={state.showTime ? disabledTime : null}
       timePicker={state.showTime ? timePickerElement : null}
       defaultValue={this.props.defaultCalendarValue}
-      showDateInput={state.showDateInput}
+      showDateInput={false}
+      showMonthDropdown={true}
+      showYearDropdown={true}
       disabledDate={disabledDate}
-=======
-      formatter={getFormat(state.showTime)}
-      timePicker={state.showTime ? timePickerElement : null}
-      defaultValue={this.props.defaultCalendarValue}
-      showDateInput={state.showDateInput}
->>>>>>> local
     />);
     return (<div style={{ width: 400, margin: 20 }}>
       <div style={{ marginBottom: 10 }}>
@@ -279,7 +166,6 @@ const Test = React.createClass({
             ({ value }) => {
               return (
                 <span tabIndex="0">
-<<<<<<< master
                 <input
                   placeholder="please select"
                   style={{ width: 250 }}
@@ -292,21 +178,6 @@ const Test = React.createClass({
                 </span>
               );
             }
-=======
-                  <input
-                    placeholder="please select"
-                    style={{ width: 250 }}
-                    disabled={state.disabled}
-                    readOnly
-                    tabIndex="-1"
-                    className="ant-calendar-picker-input ant-input"
-                    value={value && value.format(getFormat(state.showTime)) || ''}
-                  />
-                </span>
-              );
-            }
->>>>>>> local
->>>>>>> local
           }
         </DatePicker>
       </div>
@@ -325,14 +196,6 @@ function onStandaloneChange(value) {
 }
 
 
-<<<<<<< master
-=======
-<<<<<<< remotes/origin/gh-pages
-/***/ })
-],[359]);
-//# sourceMappingURL=antd-calendar.js.map
-=======
->>>>>>> local
 ReactDOM.render((<div
   style={{
     zIndex: 1000,
@@ -342,7 +205,6 @@ ReactDOM.render((<div
   }}
 >
   <div>
-<<<<<<< master
     <div style={{ margin: 10 }}>
       <Calendar
         showWeekNumber={false}
@@ -361,16 +223,9 @@ ReactDOM.render((<div
     <div style={{ float: 'left', width: 300 }}>
       <Test defaultValue={now} />
     </div>
-=======
-   
->>>>>>> local
     <div style={{ float: 'right', width: 300 }}>
       <Test defaultCalendarValue={defaultCalendarValue} />
     </div>
     <div style={{ clear: 'both' }}></div>
   </div>
 </div>), document.getElementById('__react-content'));
-<<<<<<< master
-=======
->>>>>>> local
->>>>>>> local

@@ -3,12 +3,7 @@ import React from 'react';
 import DateTHead from './DateTHead';
 import DateTBody from './DateTBody';
 
-<<<<<<< master
-export default
-class DateTable extends React.Component {
-=======
 export default class DateTable extends React.Component {
->>>>>>> local
   render() {
     const props = this.props;
     const prefixCls = props.prefixCls;

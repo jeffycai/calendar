@@ -3,12 +3,13 @@
 
 React Calendar
 
+# 地址栏中加参数?cn&select即可查看新的模式
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
 [![Test coverage][coveralls-image]][coveralls-url]
 [![gemnasium deps][gemnasium-image]][gemnasium-url]
 [![npm download][download-image]][download-url]
-
+[npm-image]:https://jeffycai.github.io/calendar/examples/example.png
 [npm-image]: http://img.shields.io/npm/v/rc-calendar.svg?style=flat-square
 [npm-url]: http://npmjs.org/package/rc-calendar
 [travis-image]: https://img.shields.io/travis/react-component/calendar.svg?style=flat-square
