@@ -1,5 +1,6 @@
 /* eslint react/no-multi-comp:0, no-console:0 */
 
+<<<<<<< master
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Picker from 'rc-calendar/src/Picker';
@@ -9,6 +10,20 @@ import enUS from 'rc-calendar/src/locale/en_US';
 import TimePickerPanel from 'rc-time-picker/lib/Panel';
 import 'rc-calendar/assets/index.less';
 import 'rc-time-picker/assets/index.css';
+=======
+<<<<<<< remotes/origin/gh-pages
+=======
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Picker from 'ziaochina-rc-calendar/src/Picker';
+import RangeCalendar from 'ziaochina-rc-calendar/src/RangeCalendar';
+import zhCN from 'ziaochina-rc-calendar/src/locale/zh_CN';
+import enUS from 'ziaochina-rc-calendar/src/locale/en_US';
+import TimePickerPanel from 'rc-time-picker/lib/Panel';
+import 'ziaochina-rc-calendar/assets/index.less';
+import 'rc-time-picker/assets/index.css';
+>>>>>>> local
+>>>>>>> local
 
 import moment from 'moment';
 import 'moment/locale/zh-cn';

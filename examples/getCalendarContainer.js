@@ -1,3 +1,4 @@
+<<<<<<< master
 import 'rc-calendar/assets/index.less';
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -8,6 +9,33 @@ import 'rc-dialog/assets/index.css';
 
 import zhCN from 'rc-calendar/src/locale/zh_CN';
 import enUS from 'rc-calendar/src/locale/en_US';
+=======
+<<<<<<< remotes/origin/gh-pages
+webpackJsonp([2],[
+/* 0 */,
+/* 1 */,
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(process) {/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+=======
+import 'ziaochina-rc-calendar/assets/index.less';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Calendar from 'ziaochina-rc-calendar';
+import DatePicker from 'ziaochina-rc-calendar/src/Picker';
+import Dialog from 'rc-dialog';
+import 'rc-dialog/assets/index.css';
+
+import zhCN from 'ziaochina-rc-calendar/src/locale/zh_CN';
+import enUS from 'ziaochina-rc-calendar/src/locale/en_US';
+>>>>>>> local
+>>>>>>> local
 
 import moment from 'moment';
 import 'moment/locale/zh-cn';

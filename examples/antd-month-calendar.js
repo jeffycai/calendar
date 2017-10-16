@@ -1,5 +1,6 @@
 /* eslint react/no-multi-comp:0, no-console:0 */
 
+<<<<<<< master
 import 'rc-calendar/assets/index.less';
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -8,6 +9,20 @@ import DatePicker from 'rc-calendar/src/Picker';
 
 import zhCN from 'rc-calendar/src/locale/zh_CN';
 import enUS from 'rc-calendar/src/locale/en_US';
+=======
+<<<<<<< remotes/origin/gh-pages
+
+=======
+import 'ziaochina-rc-calendar/assets/index.less';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import MonthCalendar from 'ziaochina-rc-calendar/src/MonthCalendar';
+import DatePicker from 'ziaochina-rc-calendar/src/Picker';
+
+import zhCN from 'ziaochina-rc-calendar/src/locale/zh_CN';
+import enUS from 'ziaochina-rc-calendar/src/locale/en_US';
+>>>>>>> local
+>>>>>>> local
 
 import moment from 'moment';
 import 'moment/locale/zh-cn';

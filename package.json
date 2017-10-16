@@ -1,6 +1,10 @@
 {
   "name": "ziaochina-rc-calendar",
+<<<<<<< master
   "version": "0.0.3",
+=======
+  "version": "0.0.8",
+>>>>>>> local
   "description": "React Calendar",
   "keywords": [
     "react",
@@ -45,6 +49,10 @@
     "compile": "rc-tools run compile --babel-runtime",
     "pub": "rc-tools run pub --babel-runtime",
     "lint": "rc-tools run lint",
+<<<<<<< master
+=======
+    "nolint": "",
+>>>>>>> local
     "test": "jest",
     "coverage": "jest --coverage && cat ./coverage/lcov.info | coveralls"
   },
@@ -76,9 +84,12 @@
     "react-dom": "15.x",
     "react-test-renderer": "15.x"
   },
+<<<<<<< master
   "pre-commit": [
     "lint"
   ],
+=======
+>>>>>>> local
   "dependencies": {
     "babel-runtime": "6.x",
     "classnames": "2.x",

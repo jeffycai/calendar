@@ -3,17 +3,63 @@
   outline: none;
   font-family: Arial, "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Sans Serif", "WenQuanYi Micro Hei", sans-serif;
   width: 253px;
+<<<<<<< master
   border: 1px solid #ccc;
+=======
+>>>>>>> local
   list-style: none;
   font-size: 12px;
   text-align: left;
   background-color: #fff;
   border-radius: 3px;
+<<<<<<< master
   box-shadow: 0 1px 5px #ccc;
   background-clip: padding-box;
   border: 1px solid #ccc;
   line-height: 1.5;
 
+=======
+  /*box-shadow: 0 2px 2px #ccc;*/
+  background-clip: padding-box;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid #ccc;
+  border-top:0px;
+  line-height: 1.5;
+
+
+  ::-webkit-scrollbar/*整体部分*/
+  {
+    width: 7px;
+    height:7px;
+  }
+  
+  ::-webkit-scrollbar-track/*滑动轨道*/
+  {
+    //-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 0px;
+    //background: rgba(0,0,0,0.1);
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb/*滑块*/
+  {
+    border-radius: 6px;
+    background-color: #c2c2c2;
+    padding-top: 4px;
+    //-webkit-box-shadow: inset 0 0 5px rgba(114,114,114,0.2);
+    //background: rgba(114,114,114,0.5);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover/*滑块效果*/
+  {
+    border-radius: 6px;
+    -webkit-box-shadow: inset 0 0 5px rgba(114,114,114,0.2);
+    background: rgba(114,114,114,0.8);
+  }
+  
+
+>>>>>>> local
   &-date-panel, &-panel {
     position: relative;
     outline: none;
@@ -27,6 +73,23 @@
     }
   }
 
+<<<<<<< master
+=======
+  &-panel-arrow{
+    font-size: 0;  
+    line-height: 0;  
+    border-width: 10px;  
+    border-color: #3EAAE7;  
+    border-top-width: 0;  
+    border-style: dashed;  
+    border-bottom-style: solid;  
+    border-left-color: transparent;  
+    border-right-color: transparent;
+    width: 10px;
+    margin-left: 120px;
+  }
+
+>>>>>>> local
   &-header {
     padding: 0 10px;
     height: 34px;
@@ -35,6 +98,12 @@
     user-select: none;
     -webkit-user-select: none;
     border-bottom: 1px solid #ccc;
+<<<<<<< master
+=======
+    background-color: #3EAAE7;
+    color: #fff;
+    border-radius: 2px;
+>>>>>>> local
 
     > a {
       font-weight: bold;
@@ -43,17 +112,30 @@
       line-height: 34px;
       text-align: center;
       width: 30px;
+<<<<<<< master
 
       &:hover {
         cursor: pointer;
         color: #23c0fa;
+=======
+      color:#fff;
+
+      &:hover {
+        cursor: pointer;
+        color: #fff;
+>>>>>>> local
       }
     }
 
     .@{prefixClass}-prev-month-btn {
       position: absolute;
       left: 25px;
+<<<<<<< master
 
+=======
+      font-size: 20px;
+      cursor:pointer;
+>>>>>>> local
       &:after {
         content: '‹'
       }
@@ -62,10 +144,19 @@
     .@{prefixClass}-next-month-btn {
       position: absolute;
       right: 25px;
+<<<<<<< master
 
       &:after {
         content: '›'
       }
+=======
+      font-size: 20px;
+      cursor:pointer;      
+      &:after {
+        content: '›'
+      }
+
+>>>>>>> local
     }
   }
 
@@ -73,13 +164,21 @@
     display: inline-block;
     font-size: 12px;
     font-weight: bold;
+<<<<<<< master
     color: #666;
+=======
+    color: #fff;
+>>>>>>> local
     padding: 0 8px;
     line-height: 34px;
 
     &:hover {
       cursor: pointer;
+<<<<<<< master
       color: #23c0fa;
+=======
+      color: #fff;
+>>>>>>> local
     }
   }
 
@@ -90,7 +189,11 @@
     position: absolute;
     top: 0;
     cursor: pointer;
+<<<<<<< master
     color: #999;
+=======
+    color: #fff;
+>>>>>>> local
     font-family: Arial, "Hiragino Sans GB", "Microsoft Yahei", "Microsoft Sans Serif", sans-serif;
     padding: 0 5px;
     font-size: 16px;
@@ -98,13 +201,22 @@
     line-height: 34px;
 
     &:hover {
+<<<<<<< master
       color: #23c0fa;
+=======
+      color: #fff;
+>>>>>>> local
     }
   }
 
   &-next-year-btn {
     right: 0;
+<<<<<<< master
 
+=======
+    font-size: 20px;
+    cursor:pointer;
+>>>>>>> local
     &:after {
       content: '»'
     }
@@ -112,15 +224,31 @@
 
   &-prev-year-btn {
     left: 0;
+<<<<<<< master
 
+=======
+    font-size: 20px;
+    cursor:pointer;
+>>>>>>> local
     &:after {
       content: '«'
     }
   }
 
+<<<<<<< master
   &-body {
     padding: 9px 10px 10px;
     height: 217px;
+=======
+
+
+  &-body {
+    padding: 9px 10px 10px;
+    height: 217px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    box-shadow: 0px 0px 1px 1px #ccc;
+>>>>>>> local
   }
 
   table {
@@ -225,6 +353,12 @@
     padding: 10px 0;
     text-align: center;
     position: relative;
+<<<<<<< master
+=======
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    box-shadow: 0px 0px 1px 1px #ccc;
+>>>>>>> local
 
     .@{timePickerClass} {
       width: 90px;
@@ -274,7 +408,11 @@
 
     &:hover {
       cursor: pointer;
+<<<<<<< master
       color: #23c0fa;
+=======
+      color: #3EAAE7;
+>>>>>>> local
     }
 
     &-disabled {
